@@ -11,7 +11,7 @@ body {
 }
 
 
-/* sets properties for header class and subproperties*/
+/* sets properties for header class and sub-traits*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -100,6 +100,7 @@ p {
 
 }
 
+/* defines sub-traits for benefits*/
 .benefits h2 {
     margin-bottom: 10px;
     text-align: center;
@@ -115,6 +116,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+
 /* consolidated SEO, ORM, SMM into services class*/
 /* sets properties for elements using services class to have a uniform look*/
 .services {
@@ -126,6 +128,7 @@ p {
     color: #ffffff;
 }
 
+/* defines sub-traits for services*/
 .services img {
     max-height: 200px;
 }
