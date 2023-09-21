@@ -9,30 +9,13 @@
 | Git | [https://git-scm.com/](https://git-scm.com/)     |    
 
 ## Description 
+This project involved research into accessibility standards in HTML in order to meet those standards without changing the look of the website itself. This was done through the use of semantic elements available in HTML. I also consolidated the classes and element stylings in the CSS file.
 
-[Visit the Deployed Site](https://youtu.be/BFyeuLhjcPY)
-
-Your GitHub profile is an extremely important aspect of your public identity as a developer. A well-crafted one allows you to show off your work to other developers as well as potential employers. An important component of your GitHub profile—and one that many new developers often overlook—is the README.md file.
-
-The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
-
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one. This guide outlines a few best practices. As you progress in your career, you will develop your own ideas about what makes a good README.
-
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out? 
-
-Lastly, if your project is deployed, include a link to the deployed application here.
-
-If you're new to Markdown, read the GitHub guide on [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-If you need an example of a good README, check out [the VSCode repository](https://github.com/microsoft/vscode).
+[Visit the Deployed Site](https://fenriragni.github.io/horisien-refactor/)
+![Site Langing Page](./assets/images/fenriragni.github.io_horisien-refactor_.png)
 
 
-![Site Langing Page](./site.gif)
-
-
-## Table of Contents (Optional)
-
-If your README is very long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 * [Code Refactor Example](#code-refactor-example)
 * [Usage](#usage)
@@ -44,75 +27,159 @@ If your README is very long, add a table of contents to make it easy for users t
 
 ## Code Refactor Example
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-
 ```html
-<div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
-            <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
-                </li>
-                <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
-            </ul>
+  <div class="benefits">
+        <div class="benefit-lead">
+            <h3>Lead Generation</h3>
+            <img src="./assets/images/lead-generation.png" />
+            <p>
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </p>
+        </div>
+        <div class="benefit-brand">
+            <h3>Brand Awareness</h3>
+            <img src="./assets/images/brand-awareness.png" />
+            <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </p>
+        </div>
+        <div class="benefit-cost">
+            <h3>Cost Management</h3>
+            <img src="./assets/images/cost-management.png" />
+            <p>
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p>
         </div>
     </div>
 ```
 
-Converting the above non-semantic div with the class of 'header' to an appropriate [<header> semantic element](https://www.w3schools.com/html/html5_semantic_elements.asp). 
+Converting the above non-semantic div with the class of 'benefits' to an appropriate [semantic element](https://www.w3schools.com/html/html5_semantic_elements.asp). 
 
 ```html
-<header>
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
-                </li>
-                <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<aside class="benefits">
+        <section>
+            <h3>Lead Generation</h3>
+                <img src="./assets/images/lead-generation.png" alt="image of half a gear pointing to money"/>
+                    <p>
+                        Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+                    </p>
+        </section>
 
+        <section>
+            <h3>Brand Awareness</h3>
+                <img src="./assets/images/brand-awareness.png" alt="image of a lightbulb wearing a suit"/>
+                    <p>
+                        Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+                    </p>
+        </section>
+        <section>
+            <h3>Cost Management</h3>
+                    <img src="./assets/images/cost-management.png" alt="image of a gear surrounded by money"/>
+                        <p>
+                            As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+                        </p>
+        </section>
+    </aside>
 ```
 
 This change require some additional modification to the CSS selector: 
 
 ```css
-.header {
+.benefits {
+    margin-right: 20px;
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+.benefit-lead {
+    margin-bottom: 32px;
     color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 ```
 
-No longer targeting the element on the page with the class of 'header' but instead the css selector targeting the 'header' element 
+No longer targeting the element on the page with the three different classes but instead the css selector targeting a single 'benefits' class and consolidating similar attributes
 
 ```css
-header {
+.benefits {
+    margin-right: 20px;
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+    margin-bottom: 32px;
+    color: #ffffff;
+
+}
+
+.benefits h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefits p {
+    margin-bottom: 32px;
     color: #ffffff;
 }
 
+.benefits img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
 ```
 
 ## Usage 
-
 Provide instructions and examples for use. Include screenshots as needed. 
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
