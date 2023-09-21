@@ -180,53 +180,28 @@ No longer targeting the element on the page with the three different classes but
 ```
 
 ## Usage 
-Provide instructions and examples for use. Include screenshots as needed. 
+Clicking on any of the navigation links at the top:
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-```md
-![alt text](assets/images/screenshot.png)
-```
+![example1](./assets/images/example1.png)
 
 
+ Takes you to the corresponding section on the page:
+
+![example2](./assets/images/example2.png)
 ## Learning Points 
 
+Some things I've learned through this project:
 
-This is a good place to Explain what you Learned by creating this application.
-This is a great way to remind about all of the Complex Skills you now have.
-If the user is less experienced than you:
-They will be impressed by what you can do!
-
-If the user is more experienced than you:
-They will be impressed by what you can do!
-
-Remember, it is easy to forget exactly how Valuable and Impressive your skills are, as well as How Much You’ve Learned!
-So quantify that here!
-
-
+* How deep HTML is made to be accessible: Most elements have the ability to add accesssibility attributes at very little work from the developer
+* Semantic elements are extremely useful since they can take on a lot of global attributes
+* Class and ID "hooking" in CSS
+* Referencing an image as a background image allows for a different style when viewed
+* Good coding habits like commenting, efficient code, and researching element functions through documentation
+* Good workflow habits like saving work often and committing often to github
 ## Author Info
-
-```md
-### Farley Wittles 
-
-
-* [Portfolio](https://youtu.be/bHX54GCrDB4)
-* [LinkedIn](https://youtu.be/bHX54GCrDB4)
-* [Github](https://youtu.be/bHX54GCrDB4)
-```
-
-The user has looked through your whole README, and gotten familiar with your application. 
-This is where you take credit, and make it easy for them to learn more about you!
-Direct them to the following:
-- Your GitHub Profile
-- Your LinkedIn
-- Your Portfolio Website
-- And Anything Else You Want!
-
-Give credit where credit is due! 
-
-If you Pseudocode or Pair Program with someone else, give them kudos in your Contributors section!
-
+#### Alonso Ampuero 
+* [LinkedIn](https://www.linkedin.com/in/alonsoampuero/)
+* [Github](https://github.com/FenriRagni)
 
 ## Credits
 
@@ -238,32 +213,3 @@ If you followed tutorials, include links to those here as well.
 
 
 ## License
-
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
-
-
----
-
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, consider adding a heading called "Features" and listing them there.
-
-## Contributing
-
-If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
